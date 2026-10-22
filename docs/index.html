@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ec5448">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="description" content="1かい10もん。くくをおぼえて、マスターをめざそう！">
+  <title>くくクエスト</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><div class="header-inner">
+    <a class="brand" href="#home" aria-label="くくクエスト ホーム"><span class="brand-icon" aria-hidden="true">×</span><span>くく<span class="brand-light">クエスト</span><small>めざせ！ くくマスター</small></span></a>
+    <div class="header-actions"><button id="user-button" class="user-button" type="button"></button><button id="settings-button" class="icon-button" type="button" aria-label="おうちの人の せってい">⚙</button></div>
+  </div></header>
+  <nav class="nav" aria-label="メニュー"><div class="nav-inner">
+    <button data-page="home" class="nav-item" type="button"><span aria-hidden="true">⌂</span>れんしゅう</button>
+    <button data-page="map" class="nav-item" type="button"><span aria-hidden="true">▦</span>のびしろマップ</button>
+    <button data-page="collection" class="nav-item" type="button"><span aria-hidden="true">◉</span>ボールずかん</button>
+    <button data-page="treasures" class="nav-item" type="button"><span aria-hidden="true">★</span>たからもの</button>
+  </div></nav>
+  <div id="storage-warning" class="warning" hidden></div>
+  <main id="app" tabindex="-1"></main>
+  <footer class="footer"><span class="status-dot"></span><span id="save-status">きろくは この たんまつに ほぞん</span><span class="footer-sep">·</span><span>1かい 10もん ／ じかんせいげん なし</span></footer>
+  <p class="personal-notice">家庭での個人学習用 ／ きろくは この たんまつに ほぞん</p>
+  <div id="modal" class="modal-backdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div id="modal-body"></div></section></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="core.js"></script><script src="app.js"></script>
+</body>
+</html>
